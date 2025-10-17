@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌵 Happy Birthday! 🌵</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Floating succulents -->
+        <div class="floating-succulents">
+            <div class="succulent succulent-1">🌵</div>
+            <div class="succulent succulent-2">🪴</div>
+            <div class="succulent succulent-3">🌿</div>
+            <div class="succulent succulent-4">🌱</div>
+            <div class="succulent succulent-5">🌵</div>
+            <div class="succulent succulent-6">🪴</div>
+        </div>
+
+        <!-- Main content -->
+        <header class="birthday-header">
+            <div class="birthday-text">
+                <h1 class="main-title">CHEERS TO ANOTHER YEAR</h1>
+                <h2 class="birthday-subheading">Happy Birthday</h2>
+                <div class="subtitle-container">
+                    <p class="subtitle">Like fine wine and rare succulents, you only get better with age 🥂</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Interactive birthday cake section -->
+        <section class="cake-section">
+            <div class="cake-container">
+                <div class="cake">
+                    <div class="candle-container">
+                        <div class="candle">
+                            <div class="flame" id="flame"></div>
+                            <div class="wick"></div>
+                        </div>
+                    </div>
+                    <div class="cake-layer layer-top">🌵</div>
+                    <div class="cake-layer layer-middle">🪴</div>
+                    <div class="cake-layer layer-bottom">🌿</div>
+                </div>
+                <button class="blow-candle-btn" onclick="blowCandle()">
+                    �️ Make a Wish
+                </button>
+            </div>
+        </section>
+
+        <!-- Birthday messages -->
+        <section class="messages-section">
+            <div class="message-card">
+                <div class="succulent-border">
+                    <h2>✨ Celebrating You ✨</h2>
+                    <p class="funny-message" id="birthdayMessage"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote section -->
+        <section class="quote-section">
+            <div class="quote-container">
+                <blockquote class="birthday-quote">
+                    "Age is an issue of mind over matter. If you don't mind, it doesn't matter."
+                    <cite>— Mark Twain</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Succulent garden -->
+        <section class="garden-section">
+            <h2 class="garden-title">Cultivate Your Year Ahead</h2>
+            <div class="succulent-garden">
+                <div class="pot pot-1" onclick="plantSucculent(this)">
+                    <div class="pot-base"></div>
+                    <div class="succulent-plant">🌵</div>
+                    <div class="pot-label">Growth</div>
+                </div>
+                <div class="pot pot-2" onclick="plantSucculent(this)">
+                    <div class="pot-base"></div>
+                    <div class="succulent-plant">🪴</div>
+                    <div class="pot-label">Wisdom</div>
+                </div>
+                <div class="pot pot-3" onclick="plantSucculent(this)">
+                    <div class="pot-base"></div>
+                    <div class="succulent-plant">🌿</div>
+                    <div class="pot-label">Joy</div>
+                </div>
+                <div class="pot pot-4" onclick="plantSucculent(this)">
+                    <div class="pot-base"></div>
+                    <div class="succulent-plant">🌱</div>
+                    <div class="pot-label">Peace</div>
+                </div>
+            </div>
+            <p class="garden-instruction">Nurture the qualities you wish to see flourish this year</p>
+        </section>
+
+        <!-- Confetti canvas -->
+        <canvas id="confetti-canvas"></canvas>
+
+        <!-- Birthday celebration button -->
+        <div class="celebration-section">
+            <button class="celebrate-btn" onclick="startCelebration()">
+                🥂 Raise a Toast 🥂
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
