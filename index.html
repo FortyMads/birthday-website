@@ -19,6 +19,40 @@
             <div class="succulent succulent-6">🪴</div>
         </div>
 
+        <!-- Envelope Section -->
+        <section class="envelope-section">
+            <div class="envelope-container" onclick="toggleEnvelope()">
+                <div class="envelope" id="envelope">
+                    <div class="envelope-flap"></div>
+                    <div class="envelope-body"></div>
+                    <div class="envelope-seal">💌</div>
+                </div>
+                <div class="envelope-hint">Click to open your birthday letter</div>
+            </div>
+            
+            <!-- Letter Modal -->
+            <div class="letter-modal" id="letterModal">
+                <div class="letter-content">
+                    <div class="letter-header">
+                        <h3>A Special Birthday Message</h3>
+                        <button class="close-letter" onclick="toggleEnvelope()">✕</button>
+                    </div>
+                    <div class="letter-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        
+                        <div class="letter-signature">
+                            <p>With love and best wishes,</p>
+                            <p class="signature">Your Friends 🌵</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Main content -->
         <header class="birthday-header">
             <div class="birthday-text">

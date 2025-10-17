@@ -1,3 +1,35 @@
+// Envelope functionality
+let envelopeOpened = false;
+
+function toggleEnvelope() {
+    const envelope = document.getElementById('envelope');
+    const letterModal = document.getElementById('letterModal');
+    
+    if (!envelopeOpened) {
+        // Open envelope and show letter
+        envelope.classList.add('opened');
+        setTimeout(() => {
+            letterModal.classList.add('show');
+            envelopeOpened = true;
+        }, 300);
+    } else {
+        // Close letter and envelope
+        letterModal.classList.remove('show');
+        setTimeout(() => {
+            envelope.classList.remove('opened');
+            envelopeOpened = false;
+        }, 300);
+    }
+}
+
+// Close letter when clicking outside
+document.addEventListener('click', (e) => {
+    const letterModal = document.getElementById('letterModal');
+    if (e.target === letterModal && envelopeOpened) {
+        toggleEnvelope();
+    }
+});
+
 // Birthday messages array
 const birthdayMessages = [
     "Like a rare succulent, you've developed a unique beauty that can't be replicated.",
